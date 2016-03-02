@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form-submit</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head> 
+<body>
+	<div class="container">
+		<form name="registerForm" class="formBlock">
+			<h2 class="formTitle">Register form</h2>
+			<div>
+				<label>Name:</label>
+				<input type="text" id="name" placeholder="Name" autocomplete="off"/>
+			</div>
+			<div>
+				<label>Password:</label>
+				<input type="password" id="password" placeholder="Password"/>
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" id="email" placeholder="Email" autocomplete="off"/>
+			</div>
+			<div>
+				<label>Country:</label>
+				<select name="" id="cusSelectbox">
+					<option value="select">select</option>
+					<option value="india">india</option>
+					<option value="nepal">nepal</option>
+					<option value="bangladesh">bangladesh</option>
+					<option value="sri lanka">sri lanka</option>
+					<option value="pakistan">pakistan</option>
+				</select>
+			</div>
+			<div class="btnBlock">
+				<button type="submit" onclick="return validateRegister();" class="btn">Submit</button>
+			</div>
+			<div class="errorBlock">
+				<p id="regisErr"></p>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
